@@ -25,6 +25,8 @@ import font400 from "@fontsource/geist-sans/files/geist-sans-latin-400-normal.wo
 import font500 from "@fontsource/geist-sans/files/geist-sans-latin-500-normal.woff2?url";
 import font600 from "@fontsource/geist-sans/files/geist-sans-latin-600-normal.woff2?url";
 import font800 from "@fontsource/geist-sans/files/geist-sans-latin-800-normal.woff2?url";
+
+import PostHog from "../components/PostHog.astro";
 ---
 
 <html lang="en">
@@ -48,6 +50,8 @@ import font800 from "@fontsource/geist-sans/files/geist-sans-latin-800-normal.wo
         <slot name="head" />
 
         <SEO {...Astro.props.seo} />
+
+        <PostHog />
     </head>
 
     <body class="flex flex-col items-center">
