@@ -228,6 +228,13 @@ shell doesn't match the one of the system. For a dev shell that uses `<nixpkgs>`
 it shouldn't be an issue, but otherwise I'd recommend using
 [nix-ld](https://blog.thalheim.io/2022/12/31/nix-ld-a-clean-solution-for-issues-with-pre-compiled-executables-on-nixos/).
 
+## Extra resources
+
+Other Nix projects like uv2nix and pyproject.nix provide better integration with existing tooling, and will provide a better user experience for Nix user. Check the projects' documentation here:
+
+- https://pyproject-nix.github.io/pyproject.nix/templates.html
+- https://pyproject-nix.github.io/uv2nix/usage/getting-started.html
+
 ## C/C++
 
 For C/C++, things can get more complicated, because of the nature of the language toolchain. To begin with, an empty nix shell already provides a C compiler, `make` and some other utilities:
