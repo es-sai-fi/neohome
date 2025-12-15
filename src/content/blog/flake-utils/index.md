@@ -115,7 +115,7 @@ The main problem with flake-utils is that it doesn't check if what we want to do
     overlays.default = final: prev: {};
 
 #   ↓ this is wrong
-    packages.${system}.default = nixpkgs.legacyPackages.${system}.callPackage = ./pacakge.nix {
+    packages.${system}.default = nixpkgs.legacyPackages.${system}.callPackage = ./package.nix {
       some-special-arg = ...;
     };
 
