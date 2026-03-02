@@ -201,7 +201,7 @@ configuration. This is nice, because it will make our configuration more
 > [!NOTE]
 > Be careful with the quoting around `--add-flags "'set ...'"`. I had to add
 > these so that `wrapProgram` doesn't split it into multiple strings. You can
-> check the resulting wrapper to check if everythin is OK:
+> check the resulting wrapper to check if everything is OK:
 > ```console
 > $ cat result/bin/nvim
 > #! /nix/store/izpf49b74i15pcr9708s3xdwyqs4jxwl-bash-5.2p32/bin/bash -e
@@ -297,7 +297,7 @@ packpath = runCommandLocal "packpath" {} ''
 
 One of the things that people dislike about the Nix wrappers is that they don't
 use [lazy.nvim](https://github.com/folke/lazy.nvim). That package manager is
-capable of setting hooks automatically, so that plugins are loaded at specic
+capable of setting hooks automatically, so that plugins are loaded at specific
 events. For example, you can configure *telescope* to only load when you
 actually run the command `:Telescope`.
 

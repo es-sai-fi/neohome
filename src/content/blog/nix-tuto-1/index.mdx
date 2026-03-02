@@ -75,7 +75,7 @@ they refer to different binaries:
   /nix/store/9g2wgp6wgl8z2x3ikqab0x8dlbqj3b63-fish-3.7.1
   ```
 - There is no global library path for packages built with Nix. Each package
-referes to their inputs explicitely:
+refers to their inputs explicitly:
   ```console
   $ ldd /nix/store/qkjx3hgnpdvyg3m7973dh4hr1jxbqphw-fish-3.7.1/bin/fish
           linux-vdso.so.1 (0x00007fd3a1f1c000)
@@ -814,7 +814,7 @@ lib.flatten [ [ 1 2 ] [ 3 4 ] ]
 ### listToAttrs, attrsToList
 
 More often than not, you need to pass a list to an API that takes an attrset, or
-viceversa. The conversion is not trivial, but you can use these funtions to do
+viceversa. The conversion is not trivial, but you can use these functions to do
 so.
 
 To convert an attrset to a list, there are multiple ways to do it:
@@ -910,7 +910,7 @@ Notice that `c` was inserted, but also `b`, removing the nested attrset from the
 left. This can have negative consequences, as naively using `//` can lead to
 problems.
 
-Merging attrsets is not something that you will do commonly. A prefered approach
+Merging attrsets is not something that you will do commonly. A preferred approach
 would be to create a new attrset, and explicitly listing the key-value pairs
 with `inherit`.
 

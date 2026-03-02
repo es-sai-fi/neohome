@@ -9,9 +9,9 @@ Recently I got into packaging [tree-sitter](https://tree-sitter.github.io/tree-s
 is kind of a framework to write language parsers, which are mainly used for code editors.
 
 As far as I know, TS started as a project from the Atom team. They wanted to substitute the regex-based grammars
-for something more powerful. TS grammars "understand" the indentifiers, as they are very similar
+for something more powerful. TS grammars "understand" the identifiers, as they are very similar
 to how languages parse the source code: by identifying variables, class names, etc. This is in contrast
-to the regex-based grammars, which can produce worse results. This video from 2018 is a very intersting watch,
+to the regex-based grammars, which can produce worse results. This video from 2018 is a very interesting watch,
 so I recommend you see it to know for about TS: [https://www.youtube.com/watch?v=Jes3bD6P0To](https://www.youtube.com/watch?v=Jes3bD6P0To).
 
 I have 2 uses for packaging TS and the grammars:

@@ -9,13 +9,13 @@ summary: Tutorial to get started with a self-hosted Git repo with automatic CI, 
 In this post I want to show you how I set up a NixOS server running a private Gitea instance, with CI pipelines using Drone, all tied together with Nginx, PostgreSQL and sops-nix. With this setup you would have:
 
 - A private Git repository to upload your projects, with a nice web interface.
-- CI/CD pipelines, with a similiar behaviour to GitHub's or Gitlab's.
+- CI/CD pipelines, with a similar behaviour to GitHub's or Gitlab's.
 
-This guide is also oriented at a hobbist setup, where the approach is to keep the configuration as simple as posible.
+This guide is also oriented at a hobbist setup, where the approach is to keep the configuration as simple as possible.
 
 ## Server
 
-This guide assumes that you already have a machine to deploy your NixOS configurations to, and that you have a working minimial configuration. To do so, there are some NixOS-native projects that can help you, such as:
+This guide assumes that you already have a machine to deploy your NixOS configurations to, and that you have a working minimal configuration. To do so, there are some NixOS-native projects that can help you, such as:
 
 - [NixOps](https://github.com/NixOS/nixops)
 - [deploy-rs](https://github.com/serokell/deploy-rs) (check out my guide [here](https://ayats.org/blog/deploy-rs-example/))
@@ -88,7 +88,7 @@ The service will listen on the port `3001`, where it will receive the http reque
 
 ## Drone
 
-Drone is a piece of software that will perform our CI/CD pipelines. It is very similiar to how GitHub's actions or Gitlab's pipelines work, so:
+Drone is a piece of software that will perform our CI/CD pipelines. It is very similar to how GitHub's actions or Gitlab's pipelines work, so:
 
 1. We create a `.drone.yml` file in the root of a repository.
 2. This file defines some job(s) to execute under certain conditions, such as this example:

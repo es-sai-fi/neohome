@@ -3,7 +3,7 @@ title: Why you don't need flake-utils
 pubDate: 2023-05-15T16:44:12Z
 tags: ['nix']
 draft: false
-summary: Writing by hand the abstraction may be less error-prone than using this popular abstaction library.
+summary: Writing by hand the abstraction may be less error-prone than using this popular abstraction library.
 slug: no-flake-utils
 ---
 

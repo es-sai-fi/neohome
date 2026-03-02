@@ -8,7 +8,7 @@ slug: nix-cross
 ---
 
 
-In a previous blog post: [nix-worflow](/blog/nix-workflow), I mentioned
+In a previous blog post: [nix-workflow](/blog/nix-workflow), I mentioned
 using `mkShell` to configure a development environment which can be accessed with `nix develop` or `nix shell`. As I didn't want to overextend the post, I decided to write a follow-up post about how to adapt this workflow for cross-compilation.
 
 As C is the language used to bootstrap everything, most tools in nixpkgs have the best integration for working with C. While it is possible to use nix to cross-compile other programming languages, your mileage may vary.

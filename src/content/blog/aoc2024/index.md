@@ -181,7 +181,7 @@ requires you to find the pattern that shapes an "X" made of "MAS" (an X-MAS):
 ```
 
 Part 1 is relatively easy, having to find the string "XMAS" along different
-views of the same map (columns, rows, etc). For part 2, I decieded to use the
+views of the same map (columns, rows, etc). For part 2, I decided to use the
 library `array`, which contains a generic `Array L T`, parametrized for a
 location type and a content type. Our ASCII maps can be parsed into:
 
@@ -193,7 +193,7 @@ type Map = A.Array (V2 Int) Char
 ```
 
 Then, finding the pattern of X-MAS can be done by traversing all row and column
-indices, and visiting the neighbours with the array acces operator:
+indices, and visiting the neighbours with the array access operator:
 
 ```haskell
 (!) :: Map -> (V2 Int) -> Char

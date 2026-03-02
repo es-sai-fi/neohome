@@ -57,6 +57,7 @@
         mkShellNoCC {
           packages = [
             nodejs
+            typos
           ];
         };
     };

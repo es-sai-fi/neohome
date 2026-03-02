@@ -70,7 +70,7 @@ While this language might seem universal, there's actually some variants of it:
 
 Both Bash and ZSH are capable of running in a "POSIX-Compatible" mode. This means, they swap to interpreting
 the script as a different language. `/bin/sh` is the de-facto way to run a POSIX sh script. In most Linux distributions,
-`/bin/sh` is a symlink to Bash, which runs under the POSIX interpreter when called from the symlink, insted of enabling
+`/bin/sh` is a symlink to Bash, which runs under the POSIX interpreter when called from the symlink, instead of enabling
 the Bash language features (bashisms).
 
 Finally, I want to address the elephant in the room: a shell is a very ambiguous term, and it can be really any

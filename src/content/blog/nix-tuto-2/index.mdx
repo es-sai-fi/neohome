@@ -314,7 +314,7 @@ else. But you probably don't, so let's keep dissecting stdenv.
 ### Dependencies
 
 The different types of dependencies can be a complex topic. It gets messy when
-handling cross-compilation, because you must not mix the different architecures
+handling cross-compilation, because you must not mix the different architectures
 (e.g. using an x86_64 GCC to build an ARM64 binary).
 
 In Nix, you will use 2 kind of dependencies:
@@ -430,7 +430,7 @@ updated one, or using a different fork of the project.
 humans, Nix doesn't use them.
 + If the build process changed, adapt the package by tweaking the different
 phases.
-+ Optionally, change ony other attributes, like `patches` or `buildInputs`
++ Optionally, change only other attributes, like `patches` or `buildInputs`
 
 ```nix
 let
@@ -556,7 +556,7 @@ we have 3 packages that depend on each other:
 
 We will use `pkgs.callPackage` which passes `pkgs` to the arguments. But,
 because these 3 new packages are not in nixpkgs, we will need to pass the
-explicitely:
+explicitly:
 
 ```nix
 let

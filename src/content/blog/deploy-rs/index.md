@@ -87,7 +87,7 @@ Then, to define our system configuration, all we have to do is drop them into `.
   - Boot partition `/dev/sda1` for BIOS booting with GRUB
   - BTRFS partition `/dev/disk-by-label/NIXOS`, which includes some subvolumes for different components.
 
-- [`./nixosModules/admin.nix`](https://github.com/viperML/deploy-rs-example/blob/master/nixosModules/admin.nix): the module defines the user `admin`, with inital password `1234` and passwordless sudo (`wheel` group). **Its is very important to set you SSH public key** for the user, as `deploy-rs` [requires](https://github.com/serokell/deploy-rs/issues/107) you to be able to log-in into the server without a password.
+- [`./nixosModules/admin.nix`](https://github.com/viperML/deploy-rs-example/blob/master/nixosModules/admin.nix): the module defines the user `admin`, with initial password `1234` and passwordless sudo (`wheel` group). **Its is very important to set you SSH public key** for the user, as `deploy-rs` [requires](https://github.com/serokell/deploy-rs/issues/107) you to be able to log-in into the server without a password.
   ```nix
   # ...
   users.users.admin = {
@@ -186,7 +186,7 @@ deploy .#my-node.my-profile
 
 ## Finale
 
-I hope that this proccess servers you as an example of how to use deploy-rs and NixOS for your project. Some final ideas to go from here:
+I hope that this process servers you as an example of how to use deploy-rs and NixOS for your project. Some final ideas to go from here:
 
 - Fully automate the deployment process, by evaluating the flake when pushing a new commit, etc
 - Add different roles for different nodes
