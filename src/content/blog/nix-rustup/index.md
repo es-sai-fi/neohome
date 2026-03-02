@@ -63,13 +63,14 @@ For rust-analyzer to work properly, you will need to set up the environment vari
 # shell.nix
 ```
 
-Finally, make sure you include the `rust-src` component in your rustup toolchain definition:
+Finally, make sure you include the `rust-src` and `rust-analyzer` components in your rustup toolchain definition:
 
 ```toml
 # toolchain.toml
 [toolchain]
 components = [
-  "rust-src"
+  "rust-src",
+  "rust-analyzer"
   # ...
 ]
 ```
